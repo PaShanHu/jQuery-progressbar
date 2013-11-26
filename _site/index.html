@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/progressbar.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>jQuery插件-progressbar</title>
+	</head>
+	<body>
+
+	<h4 id='jqueryprogressbar'>jQuery插件-progressbar</h4>
+
+<p>学习<a href=''>jQuery插件编程</a>的第一个作品，主要是用于表现事件步骤之类的，与传统的进度条稍有不同。 <br />因为刚刚学，可能有点粗陋。 ;-)</p>
+
+<h5 id='id291'>插件信息</h5>
+
+<pre><code>name:jQuery.mProgressbar.js,
+author:Jerry Y,
+version:0.0.1,
+date:2013-11-26,
+description:progressbar,step,jquery</code></pre>
+
+<h5 id='id292'>实例</h5>
+
+<p>默认：<code>$(&#39;#demo1&#39;).mProgressbar();</code></p>
+<div id='demo1'>
+</div>
+<p>参数设置：</p>
+
+<pre><code>$(&#39;#demo2&#39;).mProgressbar({
+	step:4,
+	activateStep:2,
+	stepType:&#39;center&#39;,//  ====0===center   0====only-right  ====0only-left
+	textPosition:&#39;center-bottom&#39;,//center-bottom
+	text:[&#39;第一步&#39;,&#39;&lt;span style=&quot;color:#cc4b4b;font-weight:bold;&quot;&gt;第二步&lt;/span&gt;&#39;,&#39;第三步&#39;,&#39;&lt;b&gt;第四步&lt;/b&gt;&#39;],
+	textType:&#39;html&#39;,
+	setNum:true
+});</code></pre>
+<div id='demo2'>
+</div>
+<h5 id='id293'>初步使用</h5>
+
+<ol>
+<li>
+<p>引入css：</p>
+
+<p><code>&lt;head&gt;&lt;/head&gt;</code>标签中加入：<code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/progressbar.css&quot;&gt;</code></p>
+</li>
+
+<li>
+<p>引入jquery和插件：</p>
+
+<pre><code>&lt;script type=&quot;text/javascript&quot; src=&#39;/js/jquery.min.js&#39;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&#39;/js/jquery.mProgressbar.js&#39;&gt;&lt;/script&gt;</code></pre>
+</li>
+
+<li>
+<p>使用插件：<code>$el.mProgressbar();</code></p>
+</li>
+</ol>
+
+<h5 id='id294'>设置参数</h5>
+
+<p>因为插件很简单，所以直接在代码中说明：</p>
+
+<pre><code>Progressbar.defaults={
+	theme:&#39;green&#39;,//主题，目前尚未实现；
+	animation:true,//是否动画
+	duration:1200,//动画时长
+	step:4,//共几步
+	activateStep:1,//当前步
+	stepType:&#39;only-right&#39;,//  ====0===center   0====only-right  ====0only-left
+	textPosition:&#39;center-top&#39;,//center-bottom  在进度条上面或下面
+	text:[&#39;First&#39;,&#39;Second&#39;,&#39;Third&#39;,&#39;Fourth&#39;], //每步的文字说明
+	textType:&#39;text&#39;,//html
+	setNum:false,//是否在node中显示数字，未实现
+	nodeType:&#39;circle&#39;//rect,round-corner
+};</code></pre>
+
+<h5 id='id295'>下一版本</h5>
+
+<p>将未实现的选项实现，其次改进动画效果，另外，添加点击每一项的事件等。</p>
+
+<p>如果有问题或建议，请发邮件我。谢谢。 <a href='mailto:pashanhu6@hotmail.com'>&#112;&#097;&#115;&#104;&#097;&#110;&#104;&#117;&#054;&#064;&#104;&#111;&#116;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></p>
+
+	<div class='foot-control'>
+		<span class='font-icon icon-home'></span>
+		<span class='font-icon icon-left'></span>
+		<span class='font-icon icon-right'></span>
+	</div>
+
+	<script type="text/javascript" src='/js/jquery.min.js'></script>
+	<script type="text/javascript" src='/js/jquery.mProgressbar.js'></script>
+	<script type="text/javascript">
+		$('#demo1').mProgressbar();
+		$('#demo2').mProgressbar({
+			step:4,
+			activateStep:2,
+			stepType:'center',
+			textPosition:'center-bottom',
+			text:['第一步','<span style="color:#cc4b4b;font-weight:bold;">第二步</span>','第三步','<b>第四步</b>'],
+			textType:'html'
+		});
+		$('.icon-home').click(function(){
+			window.location='http://pashanhu.github.io/';
+		})
+	</script>
+	</body>
+</html>

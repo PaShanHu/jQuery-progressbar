@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/progressbar.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>{{ page.title }}</title>
+	</head>
+	<body>
+
+	{{ content }}
+
+	<div class='foot-control'>
+		<span class='font-icon icon-home'></span>
+		<span class='font-icon icon-left'></span>
+		<span class='font-icon icon-right'></span>
+	</div>
+
+	<script type="text/javascript" src='/js/jquery.min.js'></script>
+	<script type="text/javascript" src='/js/jquery.mProgressbar.js'></script>
+	<script type="text/javascript">
+		$('#demo1').mProgressbar();
+		$('#demo2').mProgressbar({
+			step:4,
+			activateStep:2,
+			stepType:'center',
+			textPosition:'center-bottom',
+			text:['第一步','<span style="color:#cc4b4b;font-weight:bold;">第二步</span>','第三步','<b>第四步</b>'],
+			textType:'html'
+		});
+		$('.icon-home').click(function(){
+			window.location='http://pashanhu.github.io/';
+		})
+	</script>
+	</body>
+</html>

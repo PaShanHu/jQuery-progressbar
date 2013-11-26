@@ -1,0 +1,55 @@
+@import 'common.less';
+
+body{
+	font-size: 16px;
+	font-family: 'Microsoft Yahei',arial;
+	margin: 0 auto;
+	max-width: 960px;
+	padding: 24px 0;
+	border-top: 4px solid #cc4b4b;
+	background-color: #f0f3f6;
+}
+
+h4{
+	margin: 32px 0 12px;
+}
+h5{
+	margin: 24px 0 8px;
+}
+
+.foot-control{
+	text-align: right;
+	border-top: 1px solid #cc4b4b;
+	.font-icon{
+		position: relative;
+		display: inline-block;
+		width: 60px;
+		height: 24px;
+		background-color: #cc4b4b;
+		color: #fff;
+		font-size: 16px;
+		line-height: 24px;
+		text-align: center;
+		.transition(e('all 0.5s'));
+		cursor: pointer;
+		&:hover{
+			color: #cc4b4b;
+			background-color: #fff;
+		}
+	}
+	.icon-left{
+		&:after{
+			content: '\e626';
+		}
+	}
+	.icon-right{
+		&:after{
+			content: '\e627';
+		}
+	}
+	.icon-home{
+		&:after{
+			content: '\e647';
+		}
+	}
+}
