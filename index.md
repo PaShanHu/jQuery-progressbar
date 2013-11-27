@@ -1,6 +1,10 @@
 ---
 layout: default
 title: jQuery插件-progressbar
+tags: [progressbar, jquery, plugin]
+postDate: 2013-11-27
+extraCss: [css/datepicker.css, css/jqueryplugin.css]
+extraJs: [js/lib/jquery.mProgressbar.js]
 ---
 
 ####jQuery插件-progressbar
@@ -8,7 +12,7 @@ title: jQuery插件-progressbar
 学习[jQuery插件编程]()的第一个作品，主要是用于表现事件步骤之类的，与传统的进度条稍有不同。   
 因为刚刚学，可能有点粗陋。 ;-)
 
-#####插件信息
+####Plugin Info（插件信息）
 
 	name:jQuery.mProgressbar.js,
 	author:Jerry Y,
@@ -16,7 +20,7 @@ title: jQuery插件-progressbar
 	date:2013-11-26,
 	description:progressbar,step,jquery
 
-#####实例
+####Example（实例）
 
 默认：`$('#demo1').mProgressbar();`
 
@@ -38,7 +42,7 @@ title: jQuery插件-progressbar
 <div id='demo2'>
 </div>
 
-#####初步使用
+####Get Started（初步使用）
 
 1.  引入css：
 
