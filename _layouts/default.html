@@ -4,28 +4,11 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title>{{page.title}}</title>
-		<script data-main='/js/main' src='/js/require.js'></script>
+		<script data-main='js/main' src='js/require.js'></script>
 		<link rel="stylesheet" type="text/css" href="/css/default.css" />
 		{% for cssUrl in page.extraCss %}
 		    <link rel="stylesheet" href="{{ cssUrl }}">
 		{% endfor %}
-		<script type="text/javascript" src='js/jquery.mProgressbar.js'></script>
-		<script type="text/javascript">
-			$(function(){
-				$('#demo1').mProgressbar();
-				$('#demo2').mProgressbar({
-					step:4,
-					activateStep:2,
-					stepType:'center',
-					textPosition:'center-bottom',
-					text:['第一步','<span style="color:#cc4b4b;font-weight:bold;">第二步</span>','第三步','<b>第四步</b>'],
-					textType:'html'
-				});
-				$('.icon-home').click(function(){
-					window.location='http://pashanhu.github.io/';
-				})
-			})
-		</script>
 	</head>
 	<body>
 		<header class='header'>
@@ -45,7 +28,7 @@
 		</aside>
 
 		{{ content }} 
-		
+
 	    <footer class='footer'>
 			<div class='foot-control'>
 				<a href="/" class='font-icon icon-home'></a>

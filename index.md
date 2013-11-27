@@ -3,7 +3,7 @@ layout: default
 title: jQuery插件-progressbar
 tags: [progressbar, jquery, plugin]
 postDate: 2013-11-27
-extraCss: [css/datepicker.css, css/jqueryplugin.css]
+extraCss: [css/progressbar.css]
 extraJs: [js/lib/jquery.mProgressbar.js]
 ---
 
