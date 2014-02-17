@@ -4,7 +4,6 @@ title: jQuery插件-progressbar
 tags: [progressbar, jquery, plugin]
 postDate: 2013-11-27
 extraCss: [css/progressbar.css]
-extraJs: [/js/lib/jquery.mProgressbar.js]
 ---
 
 学习[jQuery插件编程](http://plugins.jquery.com/)的第一个作品，主要是用于表现事件步骤之类的，与传统的进度条稍有不同。   
