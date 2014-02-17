@@ -6,8 +6,14 @@ postDate: 2013-11-27
 extraCss: [css/progressbar.css]
 ---
 
+###前言
+
 学习[jQuery插件编程](http://plugins.jquery.com/)的第一个作品，主要是用于表现事件步骤之类的，与传统的进度条稍有不同。   
 因为这个插件是刚刚学的时候做的，可能有点粗陋。 ;-)
+
+项目地址：(https://github.com/PaShanHu/jQuery-progressbar/tree/gh-pages)
+
+###插件介绍
 
 ####Plugin Info（插件信息）
 
@@ -39,7 +45,7 @@ extraCss: [css/progressbar.css]
 <div id='demo2'>
 </div>
 
-####Get Started（初步使用）
+###Get Started（插件使用）
 
 1.  引入css：
 
@@ -52,7 +58,7 @@ extraCss: [css/progressbar.css]
 
 3.  使用插件：`$el.mProgressbar();`
 
-#####设置参数
+####设置参数
 
 因为插件很简单，所以直接在代码中说明：
 
@@ -70,7 +76,7 @@ extraCss: [css/progressbar.css]
 		nodeType:'circle'//rect,round-corner
 	};
 
-#####下一版本
+###下一版本
 
 将未实现的选项实现，其次改进动画效果，另外，添加点击每一项的事件等。
 
